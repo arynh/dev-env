@@ -60,10 +60,16 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
   fast-syntax-highlighting # source: https://github.com/zdharma-continuum/fast-syntax-highlighting
+  git
+  timer
+  zsh-autosuggestions
 )
+
+# Configure plugins
+TIMER_THRESHOLD=2
+TIMER_FORMAT='[%d]'
+TIMER_PRECISION=1
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,5 +101,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # home configuration
 export XDG_CONFIG_HOME=$HOME/.config
 
-# Set personal aliases
-alias cat=bat
+# Nicer things
+alias cat=bat # source: https://github.com/sharkdp/bat
+alias vim=nvim # source: https://github.com/neovim/neovim
+
