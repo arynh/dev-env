@@ -1,0 +1,16 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+env:
+  TERM: xterm-256color
+font:
+  size: 13
+  normal:
+    family: JetBrainsMono Nerd font
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd font
+    style: Bold
+  italic:
+    family: JetBrainsMono Nerd font
+    style: Italic
+
