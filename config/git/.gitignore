@@ -1,0 +1,27 @@
+[core]
+	excludesfile = ~/.gitignore
+	pager = delta
+
+[user]
+	name = Aryn Harmon
+	email = arynh@protonmail.com
+
+[merge]
+	tool = vscode
+
+[mergetool "vscode"]
+	cmd = "code --wait $MERGED"
+
+[credential]
+	helper = store
+
+[delta]
+	navigate = true
+	line-numbers = true
+
+[diff]
+	colorMoved = default
+
+[color]
+	ui = auto
+
